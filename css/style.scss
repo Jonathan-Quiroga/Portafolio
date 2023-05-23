@@ -1,7 +1,12 @@
-$dark:#121212;
-$medio:#212529;
-$claro:#343a40;
-
+$dark:#082032;
+$medio:#2C394B;
+$claro:#334756;
+$red:#FF4C29;
+@mixin medida {
+    width: 82vw;
+    height: 100vh;
+}
+// cambio de diseño 950px
 
 *{
     margin: 0;
@@ -19,7 +24,7 @@ header{
     background-color: $dark;
     color: rgb(255, 255, 255);
     position: fixed;
-    min-width: 150px;
+    min-width: 160px;
 
     nav{
         width: 100%;
@@ -32,27 +37,29 @@ header{
        
 
         .perfil{     
-                  
+            font-size: 20px;
             .img{   
                 width: 90%;  
                 border: $claro solid 5px;
                 margin: 0 auto 10px;
-                background-color: antiquewhite;
+                border-radius: 20%;
                 img{
                     width: 100%;
                     height: 100%;
-                                    
+                    border-radius: 20%;
                 }
                 
             }
-            p{
-                text-shadow: 2px 2px 2px red;
+            a{
+                text-decoration: none;
+                color: whitesmoke;
             }
         }
          
         li{
             list-style-type: none;
             margin: 15px 0;
+            font-size: 25px;
             a{
                 text-decoration: none;
                 color: whitesmoke;
@@ -69,7 +76,7 @@ header{
         a{
             color: whitesmoke;
             i:hover{
-                color: red;
+                color: $red;
             }
         }
        
@@ -78,8 +85,123 @@ header{
 }
 
 article{
-    margin-left: 17vw;
-    background-color:$claro ;
+    margin-left: 17%;
+
+    #jonathan{
+        display: flex;
+        color: whitesmoke;
+        @include medida();
+        background: url("https://execute.grupometis.org/wp-content/uploads/2020/06/java.jpg");        
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        div{
+            background-color: rgb(52, 58, 64,.7);
+            width: 100%;
+            height: 100%;     
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+            padding-top: 15%;
+            p{
+                font-size: 40px;   
+                margin: 15px 0;
+            }
+
+            .letras{
+                text-shadow: 5px 5px 5px $red;
+                font-size: 80px;
+
+            }
+            
+            
+           
+        }
+    }
+
+    #sobreMi{
+        @include medida();
+        background-color: $medio;
+        color: whitesmoke;
+        font-size: 18px;
+        padding:2% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .titulo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .tit_uno{
+                position: absolute;
+                font-size: 90px;
+                margin-top: -50px;
+                color:#26475e;
+                letter-spacing: 5px;
+            }
+            .tit_dos{
+                z-index: 1;
+                position: absolute;
+                letter-spacing: 11px;
+                font-size: 30px;
+                h2{
+
+                    text-decoration: underline $red ;
+                }
+            }
+        }
+        .sobreMi_texto{
+            color: #abb0b4;
+            width: 100%;
+            display: flex;
+            h2{
+                color: whitesmoke;
+                span{
+                    color: $red;
+                }
+            }
+            p{
+                margin: 5px 0;
+            }
+            .sobreMi_texto_img{
+                width: 25%;
+                padding-top: 10%;
+                padding-left: 10%;
+                img{
+                    width: 250px;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    #tecnologias{
+        @include medida();
+        background-color: $claro;
+
+    }
+
+    #portafolio{
+        @include medida();
+        background-color:$medio;
+    }
+
+    #contacto{
+        width: 82vw;
+        height: 80vh;
+        background-color: $claro;
+
+    }
+
+
+    footer{
+        width: 82vw;
+        height: 20vh;
+        background-color: $medio ;
+
+    }
 }
 
 

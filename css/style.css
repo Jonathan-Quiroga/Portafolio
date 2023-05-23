@@ -11,10 +11,10 @@ body {
 header {
   width: 17vw;
   height: 100vh;
-  background-color: #121212;
+  background-color: #082032;
   color: rgb(255, 255, 255);
   position: fixed;
-  min-width: 150px;
+  min-width: 160px;
 }
 header nav {
   width: 100%;
@@ -25,22 +25,28 @@ header nav {
   padding: 20% 10%;
   text-align: center;
 }
+header nav .perfil {
+  font-size: 20px;
+}
 header nav .perfil .img {
   width: 90%;
-  border: #343a40 solid 5px;
+  border: #334756 solid 5px;
   margin: 0 auto 10px;
-  background-color: antiquewhite;
+  border-radius: 20%;
 }
 header nav .perfil .img img {
   width: 100%;
   height: 100%;
+  border-radius: 20%;
 }
-header nav .perfil p {
-  text-shadow: 2px 2px 2px red;
+header nav .perfil a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 header nav li {
   list-style-type: none;
   margin: 15px 0;
+  font-size: 25px;
 }
 header nav li a {
   text-decoration: none;
@@ -55,10 +61,110 @@ header .redes a {
   color: whitesmoke;
 }
 header .redes a i:hover {
-  color: red;
+  color: #FF4C29;
 }
 
 article {
-  margin-left: 17vw;
-  background-color: #343a40;
+  margin-left: 17%;
+}
+article #jonathan {
+  display: flex;
+  color: whitesmoke;
+  width: 82vw;
+  height: 100vh;
+  background: url("https://execute.grupometis.org/wp-content/uploads/2020/06/java.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+article #jonathan div {
+  background-color: rgba(52, 58, 64, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+}
+article #jonathan div p {
+  font-size: 40px;
+  margin: 15px 0;
+}
+article #jonathan div .letras {
+  text-shadow: 5px 5px 5px #FF4C29;
+  font-size: 80px;
+}
+article #sobreMi {
+  width: 82vw;
+  height: 100vh;
+  background-color: #2C394B;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+article #sobreMi .titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+article #sobreMi .titulo .tit_uno {
+  position: absolute;
+  font-size: 90px;
+  margin-top: -50px;
+  color: #26475e;
+  letter-spacing: 5px;
+}
+article #sobreMi .titulo .tit_dos {
+  z-index: 1;
+  position: absolute;
+  letter-spacing: 11px;
+  font-size: 30px;
+}
+article #sobreMi .titulo .tit_dos h2 {
+  -webkit-text-decoration: underline #FF4C29;
+          text-decoration: underline #FF4C29;
+}
+article #sobreMi .sobreMi_texto {
+  color: #abb0b4;
+  width: 100%;
+  display: flex;
+}
+article #sobreMi .sobreMi_texto h2 {
+  color: whitesmoke;
+}
+article #sobreMi .sobreMi_texto h2 span {
+  color: #FF4C29;
+}
+article #sobreMi .sobreMi_texto p {
+  margin: 5px 0;
+}
+article #sobreMi .sobreMi_texto .sobreMi_texto_img {
+  width: 25%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+article #sobreMi .sobreMi_texto .sobreMi_texto_img img {
+  width: 250px;
+}
+article #tecnologias {
+  width: 82vw;
+  height: 100vh;
+  background-color: #334756;
+}
+article #portafolio {
+  width: 82vw;
+  height: 100vh;
+  background-color: #2C394B;
+}
+article #contacto {
+  width: 82vw;
+  height: 80vh;
+  background-color: #334756;
+}
+article footer {
+  width: 82vw;
+  height: 20vh;
+  background-color: #2C394B;
 }/*# sourceMappingURL=style.css.map */
