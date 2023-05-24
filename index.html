@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/45cad12e64.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/45cad12e64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
 </head>
 <body>
@@ -28,7 +30,6 @@
                 <li> <a href="#sobreMi">Sobre mi</a> </li>
                 <li> <a href="#tecnologias">Tecnologias</a></li>
                 <li> <a href="#portafolio">Portafolio</a> </li>
-                <li> <a href="#contacto">Contacto</a> </li>
             </ul>
 
             <div class="redes">
@@ -96,57 +97,78 @@
             </div>
 
             <div class="tec_leng">
+
                 <div class="lenguajes">
-                    <div>
-                        <i class="fa-brands fa-html5 fa-beat" style="color: #e58a0b;"></i>
-                        <p>HTML</p>
-            
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-css3 fa-beat" style="color: #1183ee;"></i>
-                        <p>CSS</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-sass fa-beat" style="color: #e60abe;"></i>
-                        <p>SASS</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-less fa-beat" style="color: #478bff;"></i>
-                        <p>LESS</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-bootstrap fa-beat" style="color: #b708f7;"></i>
-                        <p>BOOTSTRAP</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-js fa-beat" style="color: #f1ca09;"></i>
-                        <p>JAVASCRIPT</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-react fa-beat" style="color: #06c0fe;"></i>
-                        <p>REACT</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-git-alt fa-beat" style="color: #f99406;"></i>
-                        <p>GIT</p>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-github fa-beat" style="color: #9e02f2;"></i>
-                        <p>GITHUB</p>
-                    </div>
-                    
-                    <div>
-                        <img src="./IMG/Responsive (2).svg "class="fa-beat" width="150" alt="">
-                            
-                        <p>DISEÑO RESPONSIVO</p>
-                    </div>
+
+                    <div class="lenguajes_listos">
+                        <div>
+                            <i class="fa-brands fa-html5 " style="color: #e58a0b;"></i>
+                            <p>HTML</p>
+                
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3 " style="color: #1183ee;"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-sass " style="color: #e60abe;"></i>
+                            <p>SASS</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-less " style="color: #478bff;"></i>
+                            <p>LESS</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-bootstrap " style="color: #b708f7;"></i>
+                            <p>BOOTSTRAP</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-js " style="color: #f1ca09;"></i>
+                            <p>JAVASCRIPT</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-react " style="color: #06c0fe;"></i>
+                            <p>REACT</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-git-alt " style="color: #f99406;"></i>
+                            <p>GIT</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-github " style="color: #9e02f2;"></i>
+                            <p>GITHUB</p>
+                        </div>
+                        
+                        <div>
+                            <img src="./IMG/Responsive (2).svg"  width="150" alt="">
+                                
+                            <p>DISEÑO RESPONSIVO</p>
+                        </div>
     
+                    </div>
+
+                    <div class="lenguajes_futuros">
+                        <h2>Siguientes Desafios</h2>
+                        <div class="futuros_iconos">
+                                                    
+                            <div>
+                                <i class="fa-brands fa-python" style="color: #355ac8;"></i>                                <p>PYTHON</p>
+                    
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-node-js" style="color: #23bf18;"></i>
+                                <p>NODE.JS</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
                 </div>
+
                 <div class="leng_img">
                     <img src="./IMG/herramientas.svg" alt="">
                     <p>Estas son algunas de las herramientas que utilizo para crear tus sitios web</p>
                 </div>
-
                
             </div>
             
@@ -163,20 +185,99 @@
                 </div>
             </div>
 
+            <!-- codigo del carrusel -->
+            <div class="contenedor">
+                
+                <div class="carousel">
+                    <div class="carousel_contenedor">
+                        <button aria-label="anterior" class="carousel_anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+        
+                        <div class="carousel_lista">
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                            <div class="carousel_elemento">
+                                <img src="./IMG/carrusel 1.jpg" alt="rock an roll Hall of fame">
+                                
+                            </div>
+                           
+                        </div>
+        
+                        <button aria-label="siguiente" class="carousel_siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+        
+                <!-- es donde se crearan los indicadores de la pagina -->
+                <div role="tablist" class="carousel_indicadores"></div>
+        
+            </div>
+        
+
 
         </section>
 
-        <section id="contacto">
-
-
-        </section>
         
         <footer>
-
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Jonathan Alan Quiroga Gonzalez</p>
         </footer>
 
     </article>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./index.js"></script>

@@ -12,6 +12,7 @@ body {
   display: flex;
 }
 
+/* MENU LATERAL */
 header {
   width: 17vw;
   height: 100vh;
@@ -74,6 +75,7 @@ header .redes a i:hover {
   color: #FF4C29;
 }
 
+/* HOME */
 article {
   margin-left: 17%;
 }
@@ -103,7 +105,9 @@ article #jonathan div .letras {
   text-shadow: 5px 5px 5px #FF4C29;
   font-size: 80px;
 }
-article #sobreMi {
+
+/* SOBRE MI */
+#sobreMi {
   width: 82vw;
   height: 100vh;
   background-color: #2C394B;
@@ -114,51 +118,53 @@ article #sobreMi {
   flex-direction: column;
   justify-content: space-evenly;
 }
-article #sobreMi .titulo {
+#sobreMi .titulo {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-article #sobreMi .titulo .tit_uno {
+#sobreMi .titulo .tit_uno {
   position: absolute;
   font-size: 90px;
   margin-top: -50px;
   color: #26475e;
   letter-spacing: 5px;
 }
-article #sobreMi .titulo .tit_dos {
+#sobreMi .titulo .tit_dos {
   z-index: 1;
   position: absolute;
   letter-spacing: 11px;
   font-size: 30px;
 }
-article #sobreMi .titulo .tit_dos h2 {
+#sobreMi .titulo .tit_dos h2 {
   -webkit-text-decoration: underline #FF4C29;
           text-decoration: underline #FF4C29;
 }
-article #sobreMi .sobreMi_texto {
+#sobreMi .sobreMi_texto {
   color: #abb0b4;
   width: 100%;
   display: flex;
   margin-top: 70px;
 }
-article #sobreMi .sobreMi_texto h2 {
+#sobreMi .sobreMi_texto h2 {
   color: whitesmoke;
 }
-article #sobreMi .sobreMi_texto h2 span {
+#sobreMi .sobreMi_texto h2 span {
   color: #FF4C29;
 }
-article #sobreMi .sobreMi_texto p {
+#sobreMi .sobreMi_texto p {
   margin: 5px 0;
 }
-article #sobreMi .sobreMi_texto .sobreMi_texto_img {
+#sobreMi .sobreMi_texto .sobreMi_texto_img {
   width: 25%;
   padding-top: 10%;
 }
-article #sobreMi .sobreMi_texto .sobreMi_texto_img img {
+#sobreMi .sobreMi_texto .sobreMi_texto_img img {
   width: 250px;
 }
-article #tecnologias {
+
+/* TECNOLOGIAS */
+#tecnologias {
   width: 82vw;
   height: 100vh;
   background-color: #334756;
@@ -169,59 +175,90 @@ article #tecnologias {
   flex-direction: column;
   justify-content: space-evenly;
 }
-article #tecnologias .tec_titulo {
+#tecnologias .tec_titulo {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-article #tecnologias .tec_titulo .tec_tit_uno {
+#tecnologias .tec_titulo .tec_tit_uno {
   position: absolute;
   font-size: 80px;
   margin-top: -40px;
   color: #082032;
   letter-spacing: 5px;
 }
-article #tecnologias .tec_titulo .tec_tit_dos {
+#tecnologias .tec_titulo .tec_tit_dos {
   z-index: 1;
   position: absolute;
   letter-spacing: 11px;
   font-size: 30px;
 }
-article #tecnologias .tec_titulo .tec_tit_dos h2 {
+#tecnologias .tec_titulo .tec_tit_dos h2 {
   -webkit-text-decoration: underline #FF4C29;
           text-decoration: underline #FF4C29;
 }
-article #tecnologias .tec_leng {
+#tecnologias .tec_leng {
   width: 100%;
   height: 70%;
   margin-top: 60px;
   display: flex;
+  justify-content: space-around;
   color: #082032;
 }
-article #tecnologias .tec_leng .lenguajes {
+#tecnologias .tec_leng .lenguajes .lenguajes_listos {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  height: 100%;
+  width: 100%;
+  height: 60%;
   justify-content: space-around;
 }
-article #tecnologias .tec_leng .lenguajes div {
+#tecnologias .tec_leng .lenguajes .lenguajes_listos div {
   text-align: center;
-  width: 17%;
+  width: 15%;
   height: 15%;
   margin: 2%;
   font-size: 20px;
   color: whitesmoke;
 }
-article #tecnologias .tec_leng .lenguajes div i {
+#tecnologias .tec_leng .lenguajes .lenguajes_listos div i {
   font-size: 60px;
   margin-bottom: 15px;
 }
-article #tecnologias .tec_leng .lenguajes div img {
+#tecnologias .tec_leng .lenguajes .lenguajes_listos div img {
   width: 60px;
   margin-bottom: 15px;
 }
-article #tecnologias .tec_leng .leng_img {
+#tecnologias .tec_leng .lenguajes .lenguajes_futuros {
+  width: 100%;
+  height: 40%;
+  margin-top: 5px;
+}
+#tecnologias .tec_leng .lenguajes .lenguajes_futuros h2 {
+  color: whitesmoke;
+  -webkit-text-decoration: underline #FF4C29;
+          text-decoration: underline #FF4C29;
+  text-align: center;
+  letter-spacing: 11px;
+}
+#tecnologias .tec_leng .lenguajes .lenguajes_futuros .futuros_iconos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 20px;
+  color: whitesmoke;
+}
+#tecnologias .tec_leng .lenguajes .lenguajes_futuros .futuros_iconos div {
+  text-align: center;
+  width: 15%;
+  height: 15%;
+  margin: 2%;
+  font-size: 20px;
+}
+#tecnologias .tec_leng .lenguajes .lenguajes_futuros .futuros_iconos div i {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+#tecnologias .tec_leng .leng_img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,54 +266,126 @@ article #tecnologias .tec_leng .leng_img {
   font-size: 25px;
   color: rgb(210, 205, 205);
 }
-article #tecnologias .tec_leng .leng_img img {
+#tecnologias .tec_leng .leng_img img {
   width: 300px;
   height: 300px;
 }
-article #tecnologias .tec_leng .leng_img p {
+#tecnologias .tec_leng .leng_img p {
   width: 100%;
   margin-left: 20%;
 }
-article #portafolio {
+
+/* PORTAFOLIO */
+#portafolio {
   width: 82vw;
-  height: 100vh;
+  height: 90vh;
   background-color: #2C394B;
   font-size: 18px;
-  padding: 2% 10%;
+  padding: 5% 10%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-article #portafolio .port_titulo {
+#portafolio .port_titulo {
   width: 100%;
   display: flex;
   justify-content: center;
   color: whitesmoke;
 }
-article #portafolio .port_titulo .port_tit_uno {
+#portafolio .port_titulo .port_tit_uno {
   position: absolute;
   font-size: 80px;
   margin-top: -40px;
   color: #26475e;
   letter-spacing: 5px;
 }
-article #portafolio .port_titulo .port_tit_dos {
+#portafolio .port_titulo .port_tit_dos {
   z-index: 1;
   position: absolute;
   letter-spacing: 11px;
   font-size: 30px;
 }
-article #portafolio .port_titulo .port_tit_dos h2 {
+#portafolio .port_titulo .port_tit_dos h2 {
   -webkit-text-decoration: underline #FF4C29;
           text-decoration: underline #FF4C29;
 }
-article #contacto {
-  width: 82vw;
-  height: 80vh;
-  background-color: #334756;
+
+/* --- --- CAROUSEL --- --- */
+.contenedor {
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  margin-top: 15%;
 }
-article footer {
+
+.carousel_contenedor {
+  position: relative;
+}
+
+.carousel_anterior,
+.carousel_siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 50px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-size: 40px;
+}
+
+.carousel_anterior:hover,
+.carousel_siguiente:hover {
+  color: #FF4C29;
+}
+
+.carousel_anterior {
+  left: -30px;
+}
+
+.carousel_siguiente {
+  right: -30px;
+}
+
+/* quitar el scroll */
+.carousel_lista {
+  overflow: hidden;
+}
+
+/* estilo a los indicadores (glider dot la vemos con consola,
+ es la clase que se activa por defecto con la libreria)  son las flechas de los lados*/
+.carousel_indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: whitesmoke;
+  border-radius: 0; /* se coloca 0 por que por defecto traen border radius y se lo vamos a quitar */
+}
+
+.carousel_indicadores .glider-dot:hover {
+  background-color: #FF4C29;
+}
+
+.carousel_indicadores .glider-dot.active {
+  background-color: #FF4C29;
+}
+
+/* FOOTER */
+footer {
   width: 82vw;
-  height: 20vh;
-  background-color: #2C394B;
+  height: 10vh;
+  background-color: #334756;
+  color: whitesmoke;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer i {
+  color: #FF4C29;
 }/*# sourceMappingURL=style.css.map */
