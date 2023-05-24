@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
 }
@@ -15,6 +19,12 @@ header {
   color: rgb(255, 255, 255);
   position: fixed;
   min-width: 160px;
+}
+header nav ul li a.active {
+  color: #FF4C29;
+}
+header nav ul li a.highlight {
+  color: #FF4C29;
 }
 header nav {
   width: 100%;
@@ -130,6 +140,7 @@ article #sobreMi .sobreMi_texto {
   color: #abb0b4;
   width: 100%;
   display: flex;
+  margin-top: 70px;
 }
 article #sobreMi .sobreMi_texto h2 {
   color: whitesmoke;
@@ -143,7 +154,6 @@ article #sobreMi .sobreMi_texto p {
 article #sobreMi .sobreMi_texto .sobreMi_texto_img {
   width: 25%;
   padding-top: 10%;
-  padding-left: 10%;
 }
 article #sobreMi .sobreMi_texto .sobreMi_texto_img img {
   width: 250px;
@@ -152,11 +162,113 @@ article #tecnologias {
   width: 82vw;
   height: 100vh;
   background-color: #334756;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+article #tecnologias .tec_titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+article #tecnologias .tec_titulo .tec_tit_uno {
+  position: absolute;
+  font-size: 80px;
+  margin-top: -40px;
+  color: #082032;
+  letter-spacing: 5px;
+}
+article #tecnologias .tec_titulo .tec_tit_dos {
+  z-index: 1;
+  position: absolute;
+  letter-spacing: 11px;
+  font-size: 30px;
+}
+article #tecnologias .tec_titulo .tec_tit_dos h2 {
+  -webkit-text-decoration: underline #FF4C29;
+          text-decoration: underline #FF4C29;
+}
+article #tecnologias .tec_leng {
+  width: 100%;
+  height: 70%;
+  margin-top: 60px;
+  display: flex;
+  color: #082032;
+}
+article #tecnologias .tec_leng .lenguajes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
+  justify-content: space-around;
+}
+article #tecnologias .tec_leng .lenguajes div {
+  text-align: center;
+  width: 17%;
+  height: 15%;
+  margin: 2%;
+  font-size: 20px;
+  color: whitesmoke;
+}
+article #tecnologias .tec_leng .lenguajes div i {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+article #tecnologias .tec_leng .lenguajes div img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+article #tecnologias .tec_leng .leng_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  font-size: 25px;
+  color: rgb(210, 205, 205);
+}
+article #tecnologias .tec_leng .leng_img img {
+  width: 300px;
+  height: 300px;
+}
+article #tecnologias .tec_leng .leng_img p {
+  width: 100%;
+  margin-left: 20%;
 }
 article #portafolio {
   width: 82vw;
   height: 100vh;
   background-color: #2C394B;
+  font-size: 18px;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+article #portafolio .port_titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+article #portafolio .port_titulo .port_tit_uno {
+  position: absolute;
+  font-size: 80px;
+  margin-top: -40px;
+  color: #26475e;
+  letter-spacing: 5px;
+}
+article #portafolio .port_titulo .port_tit_dos {
+  z-index: 1;
+  position: absolute;
+  letter-spacing: 11px;
+  font-size: 30px;
+}
+article #portafolio .port_titulo .port_tit_dos h2 {
+  -webkit-text-decoration: underline #FF4C29;
+          text-decoration: underline #FF4C29;
 }
 article #contacto {
   width: 82vw;
